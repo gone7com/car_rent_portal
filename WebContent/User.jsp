@@ -76,7 +76,7 @@
 					<!-- Account Dropdown -->
 					<ul id="account_dropdown" class="dropdown-content">
 						<li><a class="indigo-text">Hi <%=userFirstName%></a></li>
-						<li><a href="user_profile" class="indigo-text">Profile</a></li>
+						<li><a href="UserProfile.jsp" class="indigo-text">Profile</a></li>
 						<li><a href="logout" class="indigo-text">Logout</a></li>
 					</ul>
 				</ul>

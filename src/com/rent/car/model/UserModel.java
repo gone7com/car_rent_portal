@@ -229,7 +229,7 @@ public class UserModel implements UserModelInterface {
 
 	@Override
 	public boolean updateUsername(String id, String username) {
-		return this.update(id, "username", username);
+		return this.update(id, "user_name", username);
 	}
 
 	@Override

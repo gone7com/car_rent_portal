@@ -17,6 +17,7 @@
 <!--Import Google Icon Font-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 	rel="stylesheet">
+	
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -26,7 +27,7 @@
 
 	<%
 		String id = (String) request.getSession().getAttribute("session_id");
-		String carId = (String) request.getSession().getAttribute("carid");
+		String carId = (String) request.getParameter("carid");
 		UserController user = (UserController) request.getSession().getAttribute("user_controller");
 
 		if (id != null && !user.getFirstName(id).equals("")) {
@@ -302,9 +303,17 @@
         $(document).ready(function(){
             $('.datepicker').datepicker();
         });
-                }
+        
+        
+          }
+          
+        
          );
-               
+         function dare(){
+             var d = new Date("Jun 04,2019");
+             var str = $.datepicker.formatDate('yy-mm-dd', d);
+             alert(str);
+             }       
       </script>
 	<%
 		} else {
